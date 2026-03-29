@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Ayurvedic Wellness Clinic</title>
+    <link rel="icon" type="image/png" href="assets/images/logo-icon.png">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body style="background-color: var(--bg-color);">
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 2L19.5 9.5H12.5L16 2Z" fill="var(--primary-color)"/><path d="M16 30L12.5 22.5H19.5L16 30Z" fill="var(--primary-color)"/><path d="M30 16L22.5 19.5V12.5L30 16Z" fill="var(--primary-color)"/><path d="M2 16L9.5 12.5V19.5L2 16Z" fill="var(--primary-color)"/><circle cx="16" cy="16" r="6" fill="var(--accent-color)"/></svg>
+                <span>AyuWellness</span>
+            </a>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <div class="dropdown-menu">
+                        <a href="index.html" class="dropdown-item">Classic Home</a>
+                        <a href="home-2.html" class="dropdown-item">Wellness Retreat</a>
+                    </div>
+                </li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="cart.html" class="nav-cart" aria-label="View Cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    <span class="cart-badge">2</span>
+                </a>
+                <button id="theme-toggle" class="btn-theme-toggle" aria-label="Toggle dark mode">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <a href="login.html" class="btn btn-outline d-none d-md-inline-block" style="padding: 0.6rem 1.5rem; border-color: var(--border-color);">Login</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                <button class="mobile-toggle d-lg-none">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="section py-5">
+        <div class="container text-center reveal">
+            <h1 class="mb-3">Get in Touch</h1>
+            <p class="section-desc mx-auto" style="max-width: 600px;">Have questions about our therapies or retreats? Our team of wellness experts is here to guide you toward holistic balance.</p>
+        </div>
+    </header>
+
+    <section class="section pt-0">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Contact Info -->
+                <div class="col-lg-5 reveal">
+                    <div class="card p-5 h-100" style="border-radius: 28px;">
+                        <span class="section-tag mb-4">Connect</span>
+                        <h2 class="mb-4">Clinic Locations</h2>
+                        
+                        <div class="mb-5">
+                            <h4 class="mb-2">Kerala Sanctuary</h4>
+                            <p class="text-secondary small">Veda Valley, Munroe Island<br>Kerala, 691502</p>
+                            <p class="text-primary fw-bold mt-2">+91 474 200 1122</p>
+                        </div>
+
+                        <div class="mb-5">
+                            <h4 class="mb-2">Wellness Hub</h4>
+                            <p class="text-secondary small">77 Harmony St, Suite 101<br>Pune, MH 411001</p>
+                            <p class="text-primary fw-bold mt-2">+91 20 660 7788</p>
+                        </div>
+
+                        <div class="d-flex gap-3 mt-auto">
+                            <a href="#" class="social-icon">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.844.047 1.097.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.281.28-.546.453-.92.598-.282.11-.705.24-1.485.276-.844.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/></svg>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M12.643 15C13.979 15 15 13.845 15 12.51V3.51C15 2.175 13.979 1 12.643 1H3.357C2.021 1 1 2.175 1 3.51V12.51C1 13.845 2.021 15 3.357 15H12.643ZM3.357 2H12.643C13.414 2 14 2.586 14 3.357V12.643C14 13.414 13.414 14 12.643 14H3.357C2.586 14 2 13.414 2 12.643V3.357C2 2.586 2.586 2 3.357 2ZM11.562 3.402C11.562 3.868 11.233 4.212 10.771 4.212C10.306 4.212 9.973 3.868 9.973 3.402C9.973 2.936 10.306 2.592 10.771 2.592C11.233 2.592 11.562 2.936 11.562 3.402ZM6.368 4.71H8.169V5.551H8.194C8.444 5.076 9.055 4.544 10.024 4.544C12.04 4.544 12.41 5.869 12.41 7.601V11.29H10.53V8.349C10.53 7.647 10.518 6.744 9.553 6.744C8.574 6.744 8.423 7.509 8.423 8.298V11.29H6.543V4.71H6.368ZM3.535 4.71H5.415V11.29H3.535V4.71ZM4.475 2.592C5.071 2.592 5.553 3.074 5.553 3.67C5.553 4.266 5.071 4.748 4.475 4.748C3.879 4.748 3.397 4.266 3.397 3.67C3.397 3.074 3.879 2.592 4.475 2.592Z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="col-lg-7 reveal">
+                    <div class="card p-5 h-100" style="border-radius: 28px; background-color: var(--surface-color);">
+                        <form>
+                            <div class="row g-4">
+                                <div class="col-sm-6">
+                                    <label class="small fw-bold">Full Name</label>
+                                    <input type="text" class="newsletter-input w-100 mt-1" required>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="small fw-bold">Email Address</label>
+                                    <input type="email" class="newsletter-input w-100 mt-1" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="small fw-bold">Select Inquiry Type</label>
+                                    <select class="newsletter-input w-100 mt-1" style="appearance: auto;">
+                                        <option>General Question</option>
+                                        <option>Dosha Consultation</option>
+                                        <option>Wellness Retreat</option>
+                                        <option>Treatment Booking</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="small fw-bold">Your Message</label>
+                                    <textarea class="newsletter-input w-100 mt-1" rows="5"></textarea>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn btn-primary w-100 py-3">Submit Inquiry</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section pt-0">
+        <div class="container">
+            <div class="reveal" style="border-radius: 28px; overflow: hidden; height: 500px; box-shadow: 0 20px 40px rgba(0,0,0,0.05); border: 1px solid var(--border-color);">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.91357675!2d76.3235!3d9.9835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwNTknMDAuMCJOIDc2wrAxOScyNC42IkU!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo mb-3">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 2L19.5 9.5H12.5L16 2Z" fill="var(--primary-color)"/><path d="M16 30L12.5 22.5H19.5L16 30Z" fill="var(--primary-color)"/><path d="M30 16L22.5 19.5V12.5L30 16Z" fill="var(--primary-color)"/><path d="M2 16L9.5 12.5V19.5L2 16Z" fill="var(--primary-color)"/><circle cx="16" cy="16" r="6" fill="var(--accent-color)"/></svg>
+                        <span>AyuWellness</span>
+                    </a>
+                    <p class="text-secondary mt-3">Blending ancient Ayurvedic wisdom with modern wellness practices for a holistic healthcare experience.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="service-abhyanga.html">Abhyanga Massage</a></li>
+                        <li><a href="service-shirodhara.html">Shirodhara Therapy</a></li>
+                        <li><a href="service-panchakarma.html">Panchakarma Detox</a></li>
+                        <li><a href="services.html">All Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="shop.html">Shop Products</a></li>
+                        <li><a href="blog.html">Wellness Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p class="text-secondary">Get tips on Ayurvedic living every week.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" class="newsletter-input" required>
+                        <button type="submit" class="btn btn-primary">Join</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 AyuWellness Clinic. All rights reserved.</p>
+                <div class="d-flex gap-4">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/animations.js"></script>
+</body>
+</html>

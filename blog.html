@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Blog | Ayurvedic Wellness Clinic</title>
+    <link rel="icon" type="image/png" href="assets/images/logo-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <style>
+        .blog-sidebar {
+            position: sticky;
+            top: 100px;
+        }
+        .blog-desc {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+        }
+        .sidebar-widget {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            padding: 2.5rem;
+            border-radius: 28px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+        }
+    </style>
+</head>
+<body style="background-color: var(--bg-color);">
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 2L19.5 9.5H12.5L16 2Z" fill="var(--primary-color)"/><path d="M16 30L12.5 22.5H19.5L16 30Z" fill="var(--primary-color)"/><path d="M30 16L22.5 19.5V12.5L30 16Z" fill="var(--primary-color)"/><path d="M2 16L9.5 12.5V19.5L2 16Z" fill="var(--primary-color)"/><circle cx="16" cy="16" r="6" fill="var(--accent-color)"/></svg>
+                <span>AyuWellness</span>
+            </a>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <div class="dropdown-menu">
+                        <a href="index.html" class="dropdown-item">Classic Home</a>
+                        <a href="home-2.html" class="dropdown-item">Wellness Retreat</a>
+                    </div>
+                </li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="cart.html" class="nav-cart" aria-label="View Cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    <span class="cart-badge">2</span>
+                </a>
+                <button id="theme-toggle" class="btn-theme-toggle" aria-label="Toggle dark mode">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <a href="login.html" class="btn btn-outline d-none d-md-inline-block" style="padding: 0.6rem 1.5rem; border-color: var(--border-color);">Login</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                <button class="mobile-toggle d-lg-none">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="section">
+        <div class="container text-center">
+            <h1 class="reveal mb-3">Holistic Health Insights</h1>
+            <p class="section-desc reveal mx-auto" style="max-width: 600px;">Deep dive into Ayurvedic wisdom, seasonal diet tips, and meditation practices.</p>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-8">
+                    <div class="row g-5">
+                        <!-- Card 1 -->
+                        <div class="col-md-12 reveal">
+                            <article class="blog-card">
+                                <div class="blog-img-wrapper" style="aspect-ratio: 21/9;">
+                                    <img src="assets/images/herbs.png" alt="6 Tastes">
+                                </div>
+                                <div class="blog-meta">
+                                    <span>March 24, 2026</span>
+                                    <span>Dr. Amrita Singh</span>
+                                </div>
+                                <h2 class="blog-title" style="font-size: 2.25rem;"><a href="blog-tastes.html">The 6 Tastes: How to Balance Every Meal</a></h2>
+                                <p class="mb-4 text-secondary" style="display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Discover how Ayurvedic nutrition uses sweet, sour, salty, bitter, pungent, and astringent tastes to harmonize your metabolism and digestion for peak performance.</p>
+                                <a href="blog-tastes.html" class="blog-link">Read Full Article →</a>
+                            </article>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-md-6 reveal">
+                            <article class="blog-card">
+                                <div class="blog-img-wrapper">
+                                    <img src="assets/images/blog-1.png" alt="Yoga">
+                                </div>
+                                <div class="blog-meta">
+                                    <span>March 22, 2026</span>
+                                    <span>Wellness Tips</span>
+                                </div>
+                                <h3 class="blog-title"><a href="blog-rituals.html">5 Morning Rituals for All-Day Energy</a></h3>
+                                <p class="blog-desc">Small practices that align your biological clock with the circadian rhythm of nature for peak performance.</p>
+                                <a href="blog-rituals.html" class="blog-link">Explore Wisdom →</a>
+                            </article>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-md-6 reveal">
+                            <article class="blog-card">
+                                <div class="blog-img-wrapper">
+                                    <img src="assets/images/blog-2.png" alt="Detox">
+                                </div>
+                                <div class="blog-meta">
+                                    <span>March 20, 2026</span>
+                                    <span>Nutrition</span>
+                                </div>
+                                <h3 class="blog-title"><a href="blog-kitchari.html">The Healing Power of Kitchari Detox</a></h3>
+                                <p class="blog-desc">Why this simple mung bean and rice bowl is the gold standard for Ayurvedic cleansing and digestion.</p>
+                                <a href="blog-kitchari.html" class="blog-link">Explore Wisdom →</a>
+                            </article>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="col-md-6 reveal">
+                            <article class="blog-card">
+                                <div class="blog-img-wrapper">
+                                    <img src="assets/images/blog-3.png" alt="Meditation">
+                                </div>
+                                <div class="blog-meta">
+                                    <span>March 18, 2026</span>
+                                    <span>Mindfulness</span>
+                                </div>
+                                <h3 class="blog-title"><a href="blog-meditation.html">Meditation Styles for Your Dosha Type</a></h3>
+                                <p class="blog-desc">Different minds need different anchors. Find the style that suits your Vata, Pitta, or Kapha constitution.</p>
+                                <a href="blog-meditation.html" class="blog-link">Explore Wisdom →</a>
+                            </article>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="col-md-6 reveal">
+                            <article class="blog-card">
+                                <div class="blog-img-wrapper">
+                                    <img src="assets/images/hero.png" alt="Beauty">
+                                </div>
+                                <div class="blog-meta">
+                                    <span>March 15, 2026</span>
+                                    <span>AyurBeauty</span>
+                                </div>
+                                <h3 class="blog-title"><a href="blog-beauty.html">Ageless Beauty: Secret Skin Oils</a></h3>
+                                <p class="blog-desc">Radiant skin starts from within. Explore the herbal oils and diet secrets for a natural, authentic glow.</p>
+                                <a href="blog-beauty.html" class="blog-link">Explore Wisdom →</a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="blog-sidebar">
+                        <div class="sidebar-widget reveal">
+                            <h4 class="mb-4">Search Wisdom</h4>
+                            <input type="text" placeholder="Search wisdom..." class="newsletter-input w-100 mb-0">
+                        </div>
+
+                        <div class="sidebar-widget reveal">
+                            <h4 class="mb-4">Categories</h4>
+                            <ul class="nav flex-column gap-3">
+                                <li class="d-flex justify-content-between">
+                                    <a href="#" class="text-secondary small">Dietary Wisdom</a>
+                                    <span class="badge bg-light small px-2">12</span>
+                                </li>
+                                <li class="d-flex justify-content-between">
+                                    <a href="#" class="text-secondary small">Detox & Cleansing</a>
+                                    <span class="badge bg-light small px-2">8</span>
+                                </li>
+                                <li class="d-flex justify-content-between">
+                                    <a href="#" class="text-secondary small">Daily Rituals</a>
+                                    <span class="badge bg-light small px-2">15</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar-widget reveal" style="background: linear-gradient(135deg, var(--primary-color), var(--primary-hover)); color: white; border: none;">
+                            <h3 class="text-white mb-3">Seasonal Guides</h3>
+                            <p class="small text-white opacity-75 mb-4">Get the "Living with the Sun" eBook for free when you join our mailing list.</p>
+                            <input type="email" placeholder="Email address" class="newsletter-input w-100 mb-3" style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); color: white;">
+                            <button class="btn btn-outline w-100" style="color: white; border-color: white;">Join Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo mb-3">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 2L19.5 9.5H12.5L16 2Z" fill="var(--primary-color)"/><path d="M16 30L12.5 22.5H19.5L16 30Z" fill="var(--primary-color)"/><path d="M30 16L22.5 19.5V12.5L30 16Z" fill="var(--primary-color)"/><path d="M2 16L9.5 12.5V19.5L2 16Z" fill="var(--primary-color)"/><circle cx="16" cy="16" r="6" fill="var(--accent-color)"/></svg>
+                        <span>AyuWellness</span>
+                    </a>
+                    <p class="text-secondary mt-3">Blending ancient Ayurvedic wisdom with modern wellness practices for a holistic healthcare experience.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="service-abhyanga.html">Abhyanga Massage</a></li>
+                        <li><a href="service-shirodhara.html">Shirodhara Therapy</a></li>
+                        <li><a href="service-panchakarma.html">Panchakarma Detox</a></li>
+                        <li><a href="services.html">All Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="shop.html">Shop Products</a></li>
+                        <li><a href="blog.html">Wellness Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p class="text-secondary">Get tips on Ayurvedic living every week.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" class="newsletter-input" required>
+                        <button type="submit" class="btn btn-primary">Join</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 AyuWellness Clinic. All rights reserved.</p>
+                <div class="d-flex gap-4">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/animations.js"></script>
+</body>
+</html>

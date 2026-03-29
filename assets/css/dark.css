@@ -1,0 +1,39 @@
+[data-theme="dark"] {
+  --bg-color: #0B1F14;
+  --surface-color: #13291E;
+  --accent-color: #F59E0B;
+  --text-primary: #E7E5E4;
+  --text-secondary: #A8A29E;
+  --border-color: #1E3A2A;
+  --glass-bg: rgba(19, 41, 30, 0.8);
+  --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .card {
+  background-color: var(--surface-color);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .navbar {
+  background-color: var(--glass-bg);
+}
+
+[data-theme="dark"] .btn-outline {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+[data-theme="dark"] .btn-outline:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+[data-theme="dark"] .section-desc, 
+[data-theme="dark"] .text-secondary {
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+}
