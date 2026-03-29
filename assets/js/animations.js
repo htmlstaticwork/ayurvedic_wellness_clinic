@@ -43,6 +43,55 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelector('.nav-links');
     
     if (mobileToggle && navLinks) {
+        // Automatically add brand name to mobile menu
+        const desktopLogo = document.querySelector('.navbar .logo');
+        if (desktopLogo && !navLinks.querySelector('.logo')) {
+            const mobileBrand = document.createElement('div');
+            mobileBrand.className = 'mobile-brand active d-lg-none';
+            mobileBrand.innerHTML = desktopLogo.outerHTML;
+            navLinks.prepend(mobileBrand);
+        }
+
+        // Mark dropdowns for styling
+        document.querySelectorAll('.dropdown > .nav-link').forEach(link => {
+            link.classList.add('has-dropdown');
+        });
+
+        // Add actions to mobile menu
+        if (!navLinks.querySelector('.mobile-actions')) {
+            const desktopActions = document.querySelector('.nav-actions');
+            if (desktopActions) {
+                const mobileActions = document.createElement('div');
+                mobileActions.className = 'mobile-actions active d-lg-none mt-5 pt-4 border-top w-100';
+                
+                // Build mobile-specific action layout
+                const row = document.createElement('div');
+                row.className = 'd-flex justify-content-center align-items-center gap-4 mb-4';
+                
+                const rtl = desktopActions.querySelector('#rtl-toggle')?.cloneNode(true);
+                const theme = desktopActions.querySelector('#theme-toggle')?.cloneNode(true);
+                const cart = desktopActions.querySelector('.nav-cart')?.cloneNode(true);
+                
+                if (cart) row.appendChild(cart);
+                if (rtl) row.appendChild(rtl);
+                if (theme) row.appendChild(theme);
+                mobileActions.appendChild(row);
+
+                const login = desktopActions.querySelector('a[href*="login"]')?.cloneNode(true);
+                const signup = desktopActions.querySelector('a[href*="signup"]')?.cloneNode(true);
+                if (login) {
+                    login.className = 'btn btn-outline w-100 mb-3';
+                    mobileActions.appendChild(login);
+                }
+                if (signup) {
+                    signup.className = 'btn btn-primary w-100';
+                    mobileActions.appendChild(signup);
+                }
+                
+                navLinks.appendChild(mobileActions);
+            }
+        }
+
         mobileToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
             mobileToggle.classList.toggle('active');
@@ -59,7 +108,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Close menu when clicking a link
         navLinks.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
+            link.addEventListener('click', (e) => {
+                // If it's a dropdown toggle link in mobile
+                const dropdown = link.closest('.dropdown');
+                if (dropdown && window.innerWidth <= 1024) {
+                    // Prevent navigation if clicking the top-level part of a dropdown
+                    if (link.classList.contains('nav-link')) {
+                        e.preventDefault();
+                        dropdown.classList.toggle('active');
+                        return;
+                    }
+                }
+                
                 navLinks.classList.remove('active');
                 mobileToggle.classList.remove('active');
                 mobileToggle.innerHTML = '☰';
