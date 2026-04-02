@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         gsap.from('.hero-image', {
             opacity: 0,
-            x: 50,
+            y: 30, // Changed from x: 50 to y: 30 to prevent horizontal alignment issues
             duration: 1.2,
             ease: "power2.out",
             delay: 0.5
