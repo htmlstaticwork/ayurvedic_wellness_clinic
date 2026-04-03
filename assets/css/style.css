@@ -54,7 +54,11 @@ h6 {
 a {
   text-decoration: none;
   color: inherit;
-  transition: var(--transition-speed);
+  transition: all var(--transition-speed) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+a:hover {
+  color: var(--primary-color);
 }
 
 ul {
@@ -101,6 +105,16 @@ img {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  transition: all var(--transition-speed);
+}
+
+.logo:hover {
+  color: var(--primary-hover);
+  transform: scale(1.02);
+}
+
+.logo:hover svg path {
+  fill: var(--primary-hover);
 }
 
 .nav-links {
@@ -214,6 +228,8 @@ img {
 .btn-primary:hover {
   background-color: var(--primary-hover);
   border-color: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(77, 124, 15, 0.2);
 }
 
 .btn-outline {
@@ -225,6 +241,8 @@ img {
 .btn-outline:hover {
   background-color: var(--primary-color);
   color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(77, 124, 15, 0.2);
 }
 
 /* Quantity Control */
@@ -964,6 +982,8 @@ img {
 .btn-social:hover {
   background-color: var(--bg-color);
   border-color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(77, 124, 15, 0.1);
 }
 
 /* Utilities */
@@ -1094,6 +1114,12 @@ img {
 
 .text-primary {
   color: var(--primary-color) !important;
+}
+
+.text-primary:hover {
+  color: var(--primary-hover) !important;
+  text-decoration: underline !important;
+  text-underline-offset: 4px;
 }
 
 /* GSAP Reveal */
