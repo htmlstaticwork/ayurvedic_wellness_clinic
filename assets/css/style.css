@@ -228,6 +228,7 @@ img {
 .btn-primary:hover {
   background-color: var(--primary-hover);
   border-color: var(--primary-hover);
+  color: white;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(77, 124, 15, 0.2);
 }

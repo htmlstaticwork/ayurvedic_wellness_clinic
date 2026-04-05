@@ -79,6 +79,45 @@
                 height: auto;
                 padding-bottom: 5rem;
             }
+
+            .hero-btns {
+                flex-direction: column;
+                gap: 1rem;
+                padding: 0 1rem;
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+
+            .hero-btns .btn {
+                width: 100%;
+                margin: 0;
+                padding: 1rem 1.5rem !important;
+                border-radius: 16px;
+                font-size: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: 700;
+            }
+
+            .hero-btns .btn-primary {
+                background: linear-gradient(135deg, #4D7C0F 0%, #3F6212 100%);
+                box-shadow: 0 12px 24px rgba(77, 124, 15, 0.3);
+            }
+
+            .hero-btns .btn-retreat-outline {
+                background: rgba(255, 255, 255, 0.05);
+                backdrop-filter: blur(10px);
+                border: 2px solid rgba(255, 255, 255, 0.8);
+            }
+
+            .hero-btns .btn:active {
+                transform: scale(0.96);
+            }
         }
 
         .btn-retreat-outline {
@@ -99,6 +138,7 @@
         .home-2-hero .btn-primary:hover {
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            color: white;
         }
 
         .retreat-feature-card {
