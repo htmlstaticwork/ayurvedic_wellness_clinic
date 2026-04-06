@@ -118,7 +118,7 @@
             </a>
             
             <div class="nav-actions">
-                <button id="rtl-toggle" class="btn-theme-toggle" aria-label="Toggle RTL mode" style="display: none;">
+                <button id="rtl-toggle" class="btn-theme-toggle" aria-label="Toggle RTL mode">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 5v14M16 11l-3 3-3-3M4 11h9"/></svg>
                 </button>
                 <button id="theme-toggle" class="btn-theme-toggle" aria-label="Toggle dark mode">
@@ -145,17 +145,15 @@
                 <li><a href="#" class="sidebar-link">Supplement History</a></li>
                 <li><a href="#" class="sidebar-link">Lifestyle Log</a></li>
                 <li><a href="#" class="sidebar-link">Settings</a></li>
-                <li class="mt-4">
-                    <button id="theme-toggle" class="sidebar-link w-100 border-0" style="background: none; cursor: pointer; text-align: left;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-                        <span>Toggle Theme</span>
-                    </button>
-                </li>
-                <li>
-                    <button id="rtl-toggle" class="sidebar-link w-100 border-0" style="background: none; cursor: pointer; text-align: left;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 5v14M16 11l-3 3-3-3M4 11h9"/></svg>
-                        <span>Toggle RTL</span>
-                    </button>
+                <li class="mt-4 pt-4" style="border-top: 1px solid var(--border-color);">
+                    <div class="d-flex align-items-center gap-3 px-3">
+                        <button id="theme-toggle" class="btn-theme-toggle" aria-label="Toggle dark mode">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                        </button>
+                        <button id="rtl-toggle" class="btn-theme-toggle" aria-label="Toggle RTL mode">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 5v14M16 11l-3 3-3-3M4 11h9"/></svg>
+                        </button>
+                    </div>
                 </li>
                 <li class="mt-2"><a href="login.html" class="sidebar-link" style="color: var(--accent-color); font-weight: 600;">Logout</a></li>
             </ul>
