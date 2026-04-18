@@ -16,12 +16,12 @@
 [data-theme="dark"] {
   --primary-color: #4D7C0F;
   --accent-color: #F59E0B;
-  --bg-color: #0B1F14;
-  --surface-color: #13291E;
-  --text-primary: #E7E5E4;
-  --text-secondary: #A8A29E;
-  --border-color: #1E3A2A;
-  --glass-bg: rgba(19, 41, 30, 0.8);
+  --bg-color: #000000;
+  --surface-color: #121212;
+  --text-primary: #FFFFFF;
+  --text-secondary: #A0A0A0;
+  --border-color: #262626;
+  --glass-bg: rgba(0, 0, 0, 0.8);
   --glass-border: rgba(255, 255, 255, 0.1);
 }
 
